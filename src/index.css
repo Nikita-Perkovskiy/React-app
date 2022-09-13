@@ -1,0 +1,23 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "nav content content";
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  grid-area: header;
+  background-color: blue;
+}
+.sidebar {
+  grid-area: nav;
+  background-color: aqua;
+}
+.content {
+  grid-area: content;
+  background-color: teal;
+}
