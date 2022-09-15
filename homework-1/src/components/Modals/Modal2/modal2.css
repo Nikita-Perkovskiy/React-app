@@ -1,0 +1,38 @@
+.header-modal2 {
+  border-radius: 7px 7px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: rgb(0 0 0 / 28%);
+}
+.header-modal2 h2{
+  color: white;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+.modal-content
+{display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    text-align: center;
+    min-height: 80px;}
+
+.modal-content  p {
+  color: white;
+        margin: 0;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .modal-main2 {
+      position:fixed;
+      background: blueviolet;
+      width: 517px;
+      height: auto;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      
+    }
