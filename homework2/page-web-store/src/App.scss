@@ -1,0 +1,27 @@
+body {
+	font-family: sans-serif;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100vh;
+	
+}
+
+.app-container {
+	height: 200px;
+	width: 400px;
+	background: transparent;
+	border-radius: 20px;
+	box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+
+
+
+
