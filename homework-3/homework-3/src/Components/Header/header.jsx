@@ -2,25 +2,35 @@ import "./header.scss";
 //import PropTypes from "prop-types";
 import Basket from "../Icons/basketIcon";
 import FavIcon from "../Icons/favouriteIcon";
+import PropTypes from "prop-types";
 
-const Header = () => {
+const Header = ({ basketNumber, favNumber }) => {
   return (
     <>
       <div className="header-container">
         <h3 className="header-title">Phone Store</h3>
         <div className="icon-wrapper">
           <div className="cart-container">
-            <Basket className="cart-icon" color={"#FF2A47"} />
+            <Basket color={"#FF2A47"} number={basketNumber} />
             <p className="cart-counter"></p>
           </div>
           <div className="favorite-container">
-            <FavIcon className="favorite-icon" color={"#FF2A47"} />
+            <FavIcon
+              className="favorite-icon"
+              color={"#FF2A47"}
+              number={favNumber}
+            />
             <p className="favorite-counter"></p>
           </div>
         </div>
       </div>
     </>
   );
+};
+
+Header.propTypes = {
+  basketNumber: PropTypes.number.isRequired,
+  favNumber: PropTypes.number.isRequired,
 };
 
 export default Header;
