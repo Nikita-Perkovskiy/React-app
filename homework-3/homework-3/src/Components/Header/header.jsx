@@ -1,5 +1,4 @@
 import "./header.scss";
-//import PropTypes from "prop-types";
 import Basket from "../Icons/basketIcon";
 import FavIcon from "../Icons/favouriteIcon";
 import PropTypes from "prop-types";
@@ -31,6 +30,11 @@ const Header = ({ basketNumber, favNumber }) => {
 Header.propTypes = {
   basketNumber: PropTypes.number.isRequired,
   favNumber: PropTypes.number.isRequired,
+};
+
+Header.defaultProps = {
+  basketNumber: 0,
+  favNumber: 0,
 };
 
 export default Header;

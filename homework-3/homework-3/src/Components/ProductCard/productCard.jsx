@@ -2,18 +2,34 @@ import "./productCard.scss";
 import PropTypes from "prop-types";
 import Button from "../Button/button";
 import FavIcon from "../Icons/favouriteIcon";
+import Modal from "../Modals/modal";
 
-const ProductCard = ({ product, openModal, favorColor, addFavorProduct }) => {
+const ProductCard = ({
+  product,
+  openModal,
+  addFavorProduct,
+  closeModal,
+  text,
+  header,
+  addToBasket,
+  showModal,
+  favProducts,
+}) => {
+  let favorColor = favProducts.includes(product.squ);
+
   return (
-    <>
+    <div>
       <div className="product-card">
         <img className="product-card_img" src={product.url} alt="phone" />
         <div className="product-card_body">
           <h4 className="product-card_body_title">{product.name}</h4>
-          <div className="favorite-icon_card" onClick={addFavorProduct}>
+          <div
+            className="favorite-icon_card"
+            onClick={() => addFavorProduct(product)}
+          >
             <FavIcon
               className="favorite-icon"
-              color={favorColor ? "#ffffff" : "#ffd42a"}
+              color={favorColor ? "#ffd42a" : "#ffffff"}
             />
           </div>
           <p className="product-card_body_color">Цвет: {product.color}</p>
@@ -29,7 +45,15 @@ const ProductCard = ({ product, openModal, favorColor, addFavorProduct }) => {
           />
         </div>
       </div>
-    </>
+      {showModal && (
+        <Modal
+          closeModal={closeModal}
+          addToBasket={() => addToBasket(product)}
+          header={header}
+          text={text}
+        />
+      )}
+    </div>
   );
 };
 
@@ -41,7 +65,12 @@ ProductCard.propTypes = {
     price: PropTypes.number.isRequired,
   }),
   openModal: PropTypes.func.isRequired,
-  favorColor: PropTypes.bool.isRequired,
   addFavorProduct: PropTypes.func.isRequired,
+  header: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  closeModal: PropTypes.func.isRequired,
+  addToBasket: PropTypes.func.isRequired,
+  showModal: PropTypes.bool.isRequired,
+  favProducts: PropTypes.array.isRequired,
 };
 export default ProductCard;

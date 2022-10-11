@@ -2,19 +2,35 @@ import "./productBorder.scss";
 import ProductCard from "../ProductCard/productCard";
 import PropTypes from "prop-types";
 
-const ProductBorder = ({ list, openModal, favorColor, addFavorProduct }) => {
+const ProductBorder = ({
+  list,
+  openModal,
+  addFavorProduct,
+  closeModal,
+  text,
+  header,
+  addToBasket,
+  showModal,
+  favProducts,
+}) => {
   return (
     <>
       <div className="border-container">
         {list.map((product) => {
           return (
-            <ProductCard
-              key={product.squ}
-              product={product}
-              openModal={openModal}
-              favorColor={favorColor}
-              addFavorProduct={addFavorProduct}
-            />
+            <div key={product.squ}>
+              <ProductCard
+                product={product}
+                openModal={openModal}
+                favProducts={favProducts}
+                addFavorProduct={addFavorProduct}
+                closeModal={closeModal}
+                addToBasket={addToBasket}
+                header={header}
+                text={text}
+                showModal={showModal}
+              />
+            </div>
           );
         })}
       </div>
@@ -25,8 +41,13 @@ const ProductBorder = ({ list, openModal, favorColor, addFavorProduct }) => {
 ProductBorder.propTypes = {
   list: PropTypes.array.isRequired,
   openModal: PropTypes.func.isRequired,
-  favorColor: PropTypes.bool.isRequired,
   addFavorProduct: PropTypes.func.isRequired,
+  header: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  closeModal: PropTypes.func.isRequired,
+  addToBasket: PropTypes.func.isRequired,
+  showModal: PropTypes.bool.isRequired,
+  favProducts: PropTypes.array.isRequired,
 };
 
 export default ProductBorder;

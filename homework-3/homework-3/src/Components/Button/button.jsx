@@ -14,6 +14,12 @@ const Button = ({ backgroundColor, text, onClick, param, className }) => {
 };
 
 Button.propTypes = {
+  param: PropTypes.shape({
+    squ: PropTypes.number.isRequired,
+    url: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
+  }),
   text: PropTypes.string.isRequired,
   backgroundColor: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
