@@ -2,7 +2,7 @@ import "./modal.scss";
 import Button from "../Button/button";
 import PropTypes from "prop-types";
 
-const Modal = ({ closeModal, text, header, addToBasket, product }) => {
+const Modal = ({ closeModal, text, header, addToBasket }) => {
   return (
     <>
       <div className="modal">
@@ -21,7 +21,7 @@ const Modal = ({ closeModal, text, header, addToBasket, product }) => {
             backgroundColor={" rgb(91, 12, 12)"}
             className="modal_body_btn"
             text="Yes"
-            onClick={() => addToBasket(product)}
+            onClick={addToBasket}
           />
           <Button
             backgroundColor={" rgb(91, 12, 12)"}
@@ -37,12 +37,6 @@ const Modal = ({ closeModal, text, header, addToBasket, product }) => {
 };
 
 Modal.propTypes = {
-  product: PropTypes.shape({
-    squ: PropTypes.number.isRequired,
-    url: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
-  }),
   header: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   closeModal: PropTypes.func.isRequired,

@@ -4,14 +4,12 @@ import PropTypes from "prop-types";
 
 const ProductBorder = ({
   list,
-  openModal,
   addFavorProduct,
-  closeModal,
-  text,
-  header,
-  addToBasket,
-  showModal,
   favProducts,
+  showCross,
+  modalNoNe,
+  openModal,
+  basketProducts,
 }) => {
   return (
     <>
@@ -22,13 +20,11 @@ const ProductBorder = ({
               <ProductCard
                 product={product}
                 openModal={openModal}
+                showCross={showCross}
                 favProducts={favProducts}
                 addFavorProduct={addFavorProduct}
-                closeModal={closeModal}
-                addToBasket={addToBasket}
-                header={header}
-                text={text}
-                showModal={showModal}
+                basketProducts={basketProducts}
+                modalNoNe={modalNoNe}
               />
             </div>
           );
@@ -40,14 +36,12 @@ const ProductBorder = ({
 
 ProductBorder.propTypes = {
   list: PropTypes.array.isRequired,
-  openModal: PropTypes.func.isRequired,
   addFavorProduct: PropTypes.func.isRequired,
-  header: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-  closeModal: PropTypes.func.isRequired,
-  addToBasket: PropTypes.func.isRequired,
-  showModal: PropTypes.bool.isRequired,
   favProducts: PropTypes.array.isRequired,
+  showCross: PropTypes.bool.isRequired,
+  modalNoNe: PropTypes.bool.isRequired,
+  openModal: PropTypes.func.isRequired,
+  basketProducts: PropTypes.array.isRequired,
 };
 
 export default ProductBorder;

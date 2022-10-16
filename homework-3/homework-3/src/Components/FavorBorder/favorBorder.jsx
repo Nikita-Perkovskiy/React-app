@@ -1,29 +1,29 @@
-import "./basketBorder.scss";
+import "./favorBorder.scss";
 import PropTypes from "prop-types";
 import ProductCard from "../ProductCard/productCard";
 
-const BasketBorder = ({
-  lsBasket,
+const FavorBorder = ({
   openModal,
   addFavorProduct,
-  showCross,
   favProducts,
+  lsFavorites,
+  showCross,
   modalNoNe,
   basketProducts,
 }) => {
   return (
-    <div className="basketBorder-container">
-      {lsBasket.map((product) => {
+    <div className="favorBorder-container">
+      {lsFavorites.map((product) => {
         return (
           <div key={product.squ}>
             <ProductCard
               product={product}
-              showCross={showCross}
               openModal={openModal}
-              basketProducts={basketProducts}
-              modalNoNe={modalNoNe}
               favProducts={favProducts}
               addFavorProduct={addFavorProduct}
+              basketProducts={basketProducts}
+              showCross={showCross}
+              modalNoNe={modalNoNe}
             />
           </div>
         );
@@ -32,8 +32,8 @@ const BasketBorder = ({
   );
 };
 
-BasketBorder.propTypes = {
-  lsBasket: PropTypes.array.isRequired,
+FavorBorder.propTypes = {
+  lsFavorites: PropTypes.array.isRequired,
   openModal: PropTypes.func.isRequired,
   addFavorProduct: PropTypes.func.isRequired,
   favProducts: PropTypes.array.isRequired,
@@ -42,4 +42,4 @@ BasketBorder.propTypes = {
   basketProducts: PropTypes.array.isRequired,
 };
 
-export default BasketBorder;
+export default FavorBorder;
