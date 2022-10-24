@@ -1,0 +1,24 @@
+.product-card {
+  display: block;
+  position: relative;
+  width: 400px;
+  border: 1.5px solid rgb(6, 0, 0);
+  border-radius: 10px;
+
+  &_img {
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.favorite-icon_card {
+  position: absolute;
+  top: 4%;
+  right: 4%;
+}
+
+.product-none {
+  display: none;
+}
