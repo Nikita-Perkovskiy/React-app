@@ -11,11 +11,11 @@ const lsFavorites = getProductsFromLS("LS Favorites");
 const lsBasket = getProductsFromLS("LS Basket");
 
 const initialState = {
-  products: [],
+  products: { products: [], isLoading: false, hasError: false },
   showModal: false,
-  basketProducts: lsBasket,
-  favProducts: lsFavorites,
-  productToBasket: {},
+  basket: lsBasket,
+  favorites: lsFavorites,
+  selectedProduct: [],
 };
 
 const reducer = combineReducers({

@@ -1,81 +1,81 @@
-[
-  {
-    "name": "Samsung Galaxy A52 4/128GB",
-    "price": 460,
-    "url": "./img/3m4yhy6lnmthcsyt4b2wrx2vqqeahh67.jpg",
-    "squ": 100001,
-    "color": "blue"
-  },
+[{
+    "name": "Мотошолом Shark D-Skwal 2 Blank",
+    "price": 8420,
+    "url": "./img/motoshlem-shark-ridill-blank-black-l-300x300.webp",
+    "squ": 144887,
+    "color": "BLACK MATT"
+},
 
-  {
-    "name": "Smartfon SAMSUNG Galaxy A53",
-    "price": 490,
-    "url": "./img/download.jpg",
-    "squ": 100002,
-    "color": "black"
-  },
+{
+    "name": "Мотошолом SCORPION VX-15 EVO AIR GRID",
+    "price": 4230,
+    "url": "./img/motoshlem-scorpion-vx-15-evo-air-grid-pearl-white-red-blue-m5-300x300.webp",
+    "squ": 53960,
+    "color": "WHITE-RED-BLUE"
+}, 
 
-  {
-    "name": "Samsung Galaxy A52 4/128GB",
-    "price": 460,
-    "url": "./img/images (1).jpg",
-    "squ": 1000003,
-    "color": "grey"
-  },
+{
+    "name": "Мотошолом X-LITE X-903 UC MODERN",
+    "price": 17780,
+    "url": "./img/motoshlem-x-lite-x-903-uc-modern-class-n-com-double-d-ring-carbon-300x300.webp",
+    "squ": 138729,
+    "color": "CARBON"
+}, 
 
-  {
-    "name": "Smartfon SAMSUNG Galaxy A20s 3/32GB 6.5",
-    "price": 520,
-    "url": "./img/images (2).jpg",
-    "squ": 100004,
-    "color": "black"
-  },
+{
+    "name": "Мотошолом KYT NF-J RADAR",
+    "price": 5490,
+    "url": "./img/akva1-300x300.webp",
+    "squ": 161456,
+    "color": "AQUA BLUE"
+}, 
 
-  {
-    "name": "Smartfon SAMSUNG Galaxy Z Flip",
-    "price": 2260,
-    "url": "./img/images (3).jpg",
-    "squ": 1000005,
-    "color": "black"
-  },
+{
+    "name": "Мотошолом CABERG XTRACE",
+    "price": 6220,
+    "url": "./img/motoshlem-caberg-xtrace-matt-black-nl-l2-300x300.webp",
+    "squ": 108776,
+    "color": "MATT BLACK"
+},
 
-  {
-    "name": "Smartfon SAMSUNG Galaxy S10 8/128GB 6.1",
-    "price": 820,
-    "url": "./img/images.jpg",
-    "squ": 100006,
-    "color": "black"
-  },
+{
+    "name": "Мотошолом AGV K-1 ",
+    "price": 6540,
+    "url": "./img/agv-k1-300x300.webp",
+    "squ": 138624,
+    "color": "WHITE"
+},
 
-  {
-    "name": "Samsung Galaxy A52 4/128GB",
-    "price": 460,
-    "url": "./img/pasted image 0.png",
-    "squ": 1000007,
-    "color": "blue"
-  },
+{
+    "name": "Мотошолом AIROH RIOT LIFESTYLE",
+    "price": 7960,
+    "url": "./img/motoshlem-airoh-riot-lifestyle-matt-black-l1-300x300.webp",
+    "squ": 73566,
+    "color": "MATT BLACK"
+},
 
-  {
-    "name": "HUAWEI P50 Pro 8/256GB 6.6",
-    "price": 990,
-    "url": "./img/products_remont-telefonov-xiaomi-serii-mi_thumb256.jpg",
-    "squ": 1000008,
-    "color": "blue"
-  },
+{
+    "name": "Мотошолом AGV K-3 SV",
+    "price": 8840,
+    "url": "./img/agv-shlem-agv-k3-sv-birdy-50-skidka-na-vizor-300x300.webp",
+    "squ": 147594,
+    "color": "BIRDY"
+},
 
-  {
-    "name": "Samsung Galaxy A52 4/128GB",
-    "price": 460,
-    "url": "./img/products_remont-xiaomi-redmi-note-8t_thumb256.jpg",
-    "squ": 1000009,
-    "color": "black"
-  },
+{
+    "name": "Мотошолом HJC RPHA MAX",
+    "price": 9670,
+    "url": "./img/shlem-hjc-rpha-max-black-l-300x300.webp",
+    "squ": 26359,
+    "color": "BLACK"
+},
 
-  {
-    "name": "Huawei Mate 50",
-    "price": 630,
-    "url": "./img/unnamed-file-6.jpg",
-    "squ": 1000010,
-    "color": "black"
-  }
+{
+    "name": "Мотошолом HJC RPHA 10 PLUS FURIA MC1",
+    "price": 10790,
+    "url": "./img/motoshlem-hjc-rpha-10-plus-furia-mc7-black-orange-l1-300x300.webp",
+    "squ": 44539,
+    "color": "BLACK-RED"
+}
+
 ]

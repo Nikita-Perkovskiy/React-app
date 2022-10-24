@@ -1,47 +1,47 @@
+import { useSelector } from "react-redux";
+import Basket from "../icon/basket";
+import FavIcon from "../icon/favorite";
 import "./header.scss";
 import { Link } from "react-router-dom";
-import Basket from "../Icons/basketIcon";
-import FavIcon from "../Icons/favouriteIcon";
-import PropTypes from "prop-types";
 
-const Header = ({ basketNumber, favNumber }) => {
+const Header = () => {
+  const favorites = useSelector((state) => state.favorites);
+  const basket = useSelector((state) => state.basket);
+
+  const isFavoriteNotEmpty = favorites.length !== 0;
+  const isBasketNotEmpty = basket.length !== 0;
+
   return (
     <>
       <div className="header-container">
         <Link to="/">
-          <h3 className="header-title">Phone Store</h3>
+          <h3 className="header-title">Helmets</h3>
         </Link>
         <div className="icon-wrapper">
           <Link to="/basket">
             <div className="cart-container">
-              <Basket color="#FF2A47" number={basketNumber} />
-              <p className="cart-counter"></p>
+              <Basket className="cart-icon" color={"#FF2A47"} />
+              {isBasketNotEmpty && (
+                <div className="cart-counter">
+                  <p>{basket.length}</p>
+                </div>
+              )}
             </div>
           </Link>
-          <Link to="/fav">
+          <Link to="/favorites">
             <div className="favorite-container">
-              <FavIcon
-                className="favorite-icon"
-                color="#FF2A47"
-                number={favNumber}
-              />
-              <p className="favorite-counter"></p>
+              <FavIcon className="favorite-icon" color={"white"} />
+              {isFavoriteNotEmpty && (
+                <div className="favorite-counter">
+                  <p>{favorites.length}</p>
+                </div>
+              )}
             </div>
           </Link>
         </div>
       </div>
     </>
   );
-};
-
-Header.propTypes = {
-  basketNumber: PropTypes.number.isRequired,
-  favNumber: PropTypes.number.isRequired,
-};
-
-Header.defaultProps = {
-  basketNumber: 0,
-  favNumber: 0,
 };
 
 export default Header;
