@@ -1,0 +1,104 @@
+.product-card {
+  display: block;
+  position: relative;
+  width: 400px;
+  border: 1.5px solid rgb(6, 0, 0);
+  border-radius: 10px;
+
+  &_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row-reverse;
+
+    &_remove-btn {
+      margin: 15px;
+      font-size: 22px;
+      border: transparent;
+      background-color: transparent;
+      color: #ffe62a;
+      transition: all 1s;
+
+      &:hover {
+        border: 2px solid;
+        font-size: 26px;
+        cursor: pointer;
+      }
+    }
+    &_img {
+      // width: 330px;
+      // height: 330px;
+      margin: 10px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+  }
+
+  &_favorite-container {
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px;
+
+    &_icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  }
+
+  &_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &_title {
+      font-size: 16px;
+      font-weight: bold;
+      display: block;
+      margin: 5px 15px;
+      height: 2rem;
+    }
+
+    &_color {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0 15px;
+    }
+  }
+
+  &_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 15px;
+    &_price {
+      font-weight: bold;
+    }
+
+    &_btn-buy {
+      padding: 20px 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: #ffffff;
+      border: 2px #ffffff solid;
+      cursor: pointer;
+
+      &:hover {
+        cursor: pointer;
+        transform: scale(1.02);
+        box-shadow: 1px 2px 5px 0px rgba(0, 0, 0, 0.75);
+      }
+    }
+    &_btn-inbasket {
+      border-radius: 5px;
+      padding: 15px 10px;
+      font-size: 20px;
+      color: rgb(6, 0, 0);
+      border: 2px #ffe62a solid;
+    }
+  }
+}

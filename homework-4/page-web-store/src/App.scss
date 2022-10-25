@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,700&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  // text-align: center;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // text-align: center;
+  // min-height: 100vh;
+}
+
+.products-list-container {
+  margin: 0 auto;
+  margin-top: 30px;
+  max-width: 1170px;
+
+  &_title {
+    font-size: 24px;
+    font-weight: bold;
+    max-width: 1170px;
+    padding: 25px 5px;
+  }
+}
+// .app-container {
+// 	height: 200px;
+// 	width: 400px;
+// 	background: transparent;
+// 	border-radius: 20px;
+// 	box-shadow: 10px 10px 38px 0px rgba(0, 0, 0, 0.75);
+// 	display: flex;
+// 	justify-content: space-evenly;
+// 	align-items: center;
+// }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		   v2.0 | 20110126
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		   License: none (public domain)
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																		*/
