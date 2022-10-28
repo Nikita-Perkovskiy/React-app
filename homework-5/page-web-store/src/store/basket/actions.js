@@ -11,3 +11,10 @@ export const removeFromBasket = (product) => {
     payload: product,
   };
 };
+
+export const cleanBasket = () => {
+  return {
+    type: "CLEAN_BASKET",
+    payload: [],
+  };
+};

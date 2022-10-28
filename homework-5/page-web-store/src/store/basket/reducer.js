@@ -6,6 +6,9 @@ const reducer = (state = [], action) => {
     case "REMOVE_FROM_BASKET": {
       return state.filter((elem) => elem.squ !== action.payload.squ);
     }
+    case "CLEAN_BASKET": {
+      return action.payload;
+    }
     default: {
       return state;
     }
