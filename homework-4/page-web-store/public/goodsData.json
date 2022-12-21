@@ -1,81 +1,41 @@
 [
   {
-    "name": "Samsung Galaxy A52 4/128GB",
-    "price": 460,
-    "url": "./img/3m4yhy6lnmthcsyt4b2wrx2vqqeahh67.jpg",
-    "squ": 100001,
-    "color": "blue"
+    "price": 460
   },
 
   {
-    "name": "Smartfon SAMSUNG Galaxy A53",
-    "price": 490,
-    "url": "./img/download.jpg",
-    "squ": 100002,
-    "color": "black"
+    "price": 490
   },
 
   {
-    "name": "Samsung Galaxy A52 4/128GB",
-    "price": 460,
-    "url": "./img/images (1).jpg",
-    "squ": 1000003,
-    "color": "grey"
+    "price": 460
   },
 
   {
-    "name": "Smartfon SAMSUNG Galaxy A20s 3/32GB 6.5",
-    "price": 520,
-    "url": "./img/images (2).jpg",
-    "squ": 100004,
-    "color": "black"
+    "price": 520
   },
 
   {
-    "name": "Smartfon SAMSUNG Galaxy Z Flip",
-    "price": 2260,
-    "url": "./img/images (3).jpg",
-    "squ": 1000005,
-    "color": "black"
+    "price": 2260
   },
 
   {
-    "name": "Smartfon SAMSUNG Galaxy S10 8/128GB 6.1",
-    "price": 820,
-    "url": "./img/images.jpg",
-    "squ": 100006,
-    "color": "black"
+    "price": 820
   },
 
   {
-    "name": "Samsung Galaxy A52 4/128GB",
-    "price": 460,
-    "url": "./img/pasted image 0.png",
-    "squ": 1000007,
-    "color": "blue"
+    "price": 460
   },
 
   {
-    "name": "HUAWEI P50 Pro 8/256GB 6.6",
-    "price": 990,
-    "url": "./img/products_remont-telefonov-xiaomi-serii-mi_thumb256.jpg",
-    "squ": 1000008,
-    "color": "blue"
+    "price": 990
   },
 
   {
-    "name": "Samsung Galaxy A52 4/128GB",
-    "price": 460,
-    "url": "./img/products_remont-xiaomi-redmi-note-8t_thumb256.jpg",
-    "squ": 1000009,
-    "color": "black"
+    "price": 460
   },
 
   {
-    "name": "Huawei Mate 50",
-    "price": 630,
-    "url": "./img/unnamed-file-6.jpg",
-    "squ": 1000010,
-    "color": "black"
+    "price": 630
   }
 ]
